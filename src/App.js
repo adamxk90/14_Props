@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Profile
-        fullName={{name:"adam"}}
+        fullName="adam mehdi"
         bio="Imagination is more important than knowledge – Albert Einstein"
         profession="Profession"
       >
