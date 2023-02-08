@@ -1,12 +1,6 @@
 import PropTypes from 'prop-types'
 
-Profile.propTypes = {
-  anyProp: PropTypes.any,
-  booleanProp: PropTypes.bool,
-  numberProp: PropTypes.number,
-  stringProp: PropTypes.string,
-  functionProp: PropTypes.func,
-}
+
 Profile.defaultProps = {
   version: '16',
 }
@@ -25,6 +19,9 @@ function Profile(props) {
       <button onClick={() => handleName(fullName)}>Click Me!</button>
     </div>
   )
+}
+Profile.propTypes = {
+  fullName: PropTypes.string,
 }
 
 export default Profile
